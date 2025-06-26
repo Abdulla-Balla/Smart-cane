@@ -12,7 +12,7 @@ This project focuses on the development of an affordable smart cane that support
 
 ## 🔍 Research Background
 
-Navigating independently is one of the greatest daily challenges faced by blind or visually impaired individuals. Traditional canes do not offer information about obstacles above ground level or on the sides. Our research aimed to address this limitation using a simple microcontroller-based system with real-time obstacle detection and non-visual feedback.
+Navigating independently is one of the greatest daily challenges faced by blind or visually impaired individuals. Traditional canes do not offer information about obstacles above ground level or on the sides. My research aimed to address this limitation using a simple microcontroller-based system with real-time obstacle detection and non-visual feedback.
 
 Ultrasonic sensors were chosen due to their cost-effectiveness, reliability, and ease of integration. Studies on assistive devices confirm that audible feedback is among the most accessible alert methods for those who cannot rely on haptic or visual systems.
 
