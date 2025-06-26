@@ -35,7 +35,6 @@ The Smart Cane is an innovative assistive device designed to help users detect n
 | Power Bank              | 1        | Portable power supply                |
 | Jumper Wires            | -        | Electrical connections               |
 | Breadboard (Optional)   | 1        | Prototyping and wiring               |
-| 3D Printed or Custom Mounts | Optional | Sensor holders                   |
 
 ##  Challenges and Solutions
 
