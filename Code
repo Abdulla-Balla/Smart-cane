@@ -1,26 +1,20 @@
-// === Pin Assignments ===
-// Front
 const int trigFront = 5;
 const int echoFront = 4;
 const int buzzerFront = 9;
 
-// Left
 const int trigLeft = 6;
 const int echoLeft = 7;
 const int buzzerLeft = 10;
 
-// Right
 const int trigRight = 8;
 const int echoRight = 3;
 const int buzzerRight = 11;
 
-// Distance threshold in cm
 const int dangerDistance = 50;
 
 void setup() {
   Serial.begin(9600);
 
-  // Sensor Pins
   pinMode(trigFront, OUTPUT);
   pinMode(echoFront, INPUT);
   pinMode(trigLeft, OUTPUT);
@@ -28,7 +22,6 @@ void setup() {
   pinMode(trigRight, OUTPUT);
   pinMode(echoRight, INPUT);
 
-  // Buzzer Pins
   pinMode(buzzerFront, OUTPUT);
   pinMode(buzzerLeft, OUTPUT);
   pinMode(buzzerRight, OUTPUT);
@@ -59,30 +52,26 @@ void loop() {
   Serial.print(distRight);
   Serial.println(" cm");
 
-  // === BUZZERS ===
 
-  // FRONT SENSOR: Continuous beep
   if (distFront < dangerDistance) {
-    tone(buzzerFront, 1000);  // Continuous tone
+    tone(buzzerFront, 1000);  
   } else {
     noTone(buzzerFront);
   }
 
-  // LEFT SENSOR: Fast short beeps
   if (distLeft < dangerDistance) {
-    tone(buzzerLeft, 1200, 100);  // 100 ms beep
-    delay(150);                   // Short pause between beeps
+    tone(buzzerLeft, 1200, 100);  
+    delay(150);                   
   } else {
     noTone(buzzerLeft);
   }
 
-  // RIGHT SENSOR: Slower long beeps
   if (distRight < dangerDistance) {
-    tone(buzzerRight, 800, 300);  // 300 ms beep
-    delay(350);                   // Pause between beeps
+    tone(buzzerRight, 800, 300);  
+    delay(350);                   
   } else {
     noTone(buzzerRight);
   }
 
-  delay(100); // Delay before next reading
+  delay(100); 
 }
