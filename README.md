@@ -24,7 +24,7 @@ The Smart Cane is an innovative assistive device designed to help users detect n
 - **Structure**: An aluminum tube body with custom mounts for sensors and components.
 - **Programming**: Arduino code reads distance and activates buzzers based on thresholds.
 
-## Bill of Materials
+## List of Materials
 
 | Component                | Quantity | Purpose                              |
 |-------------------------|----------|--------------------------------------|
